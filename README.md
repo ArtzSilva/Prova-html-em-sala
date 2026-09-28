@@ -19,12 +19,7 @@ Site de HTML puro sobre a cidade de João Pessoa (PB), feito como avaliação da
 
 ```
 projeto/
-├── index.html
-├── README.md
 ├── html/
-│   ├── pontos.html
-│   ├── cultura.html
-│   └── sugestoes.html
 ├── img/
 ├── audio/
 └── video/
