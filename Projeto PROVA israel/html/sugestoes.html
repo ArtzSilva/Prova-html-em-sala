@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões</title>
+</head>
+<body>
+    <header>
+        <h1>Conheça João Pessoa</h1>
+        <p>Saiba mais sobre a linda capital da <abbr title="Paraíba">PB</abbr></p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html/Index.html">Início</a></li>
+            <li><a href="../html/cultura.html">Cultura</a></li>
+            <li><a href="../html/pontos.html">Pontos</a></li>
+            <li><a href="../html/sugestoes.html">Sugestões</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Conte sua experiência</h2>
+            <p>Já visitou a cidade ou pretende visitar? Preencha o formulário abaixo. Os campos com <mark>asterisco (*)</mark> são obrigatórios.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <p>
+                        <label for="nome">Nome *</label><br>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail *</label><br>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua visita</legend>
+
+                    <p>
+                        <label for="ponto">Ponto turístico favorito *</label><br>
+                        <input type="text" id="ponto" name="ponto" list="pontos" placeholder="Escolha ou digite um local" required>
+                        <datalist id="pontos">
+                            <option value="Praia de Tambaú">
+                            <option value="Praia do Cabo Branco">
+                            <option value="Ponta do Seixas">
+                            <option value="Farol do Cabo Branco">
+                            <option value="Centro Histórico">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="data">Data da visita *</label><br>
+                        <input type="date" id="data" name="data" required>
+                    </p>
+
+                    <p>
+                        <label for="nota">Nota para a cidade (0 a 10)</label><br>
+                        <input type="range" id="nota" name="nota" min="0" max="10" value="5">
+                    </p>
+
+                    <p>
+                        <label for="foto">Foto da viagem (opcional)</label><br>
+                        <input type="file" id="foto" name="foto" accept="image/*">
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentário</label><br>
+                        <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Conte o que mais gostou"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar sugestão</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Informação atualizada</h2>
+            <!-- PREENCHA COM UM DADO REAL QUE MUDOU (horário, valor de ingresso, etc.) -->
+            <p> O QUE MUDOU: <del>sem tranposrte</del> <ins>com otimo transporte</ins></p>
+        </section>
+
+        <aside>
+            <h2>Dica</h2>
+            <p>Se tiver uma sugestão de lugar que não está na lista, digite o nome no campo de ponto turístico.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JP. Desenvolvido por Arthur Oliveira Silva.</p>
+    </footer>
+</body>
+</html>
